@@ -1,14 +1,14 @@
 webpackJsonp([0],{
 
-/***/ 272:
+/***/ 278:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DecathlonCalculatorPageModule", function() { return DecathlonCalculatorPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PentathlonWCalculatorPageModule", function() { return PentathlonWCalculatorPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__decathlon_calculator__ = __webpack_require__(273);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pentathlon_w_calculator__ = __webpack_require__(283);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,34 +18,34 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var DecathlonCalculatorPageModule = /** @class */ (function () {
-    function DecathlonCalculatorPageModule() {
+var PentathlonWCalculatorPageModule = /** @class */ (function () {
+    function PentathlonWCalculatorPageModule() {
     }
-    DecathlonCalculatorPageModule = __decorate([
+    PentathlonWCalculatorPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__decathlon_calculator__["a" /* DecathlonCalculatorPage */],
+                __WEBPACK_IMPORTED_MODULE_2__pentathlon_w_calculator__["a" /* PentathlonWCalculatorPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__decathlon_calculator__["a" /* DecathlonCalculatorPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__pentathlon_w_calculator__["a" /* PentathlonWCalculatorPage */]),
             ],
         })
-    ], DecathlonCalculatorPageModule);
-    return DecathlonCalculatorPageModule;
+    ], PentathlonWCalculatorPageModule);
+    return PentathlonWCalculatorPageModule;
 }());
 
-//# sourceMappingURL=decathlon-calculator.module.js.map
+//# sourceMappingURL=pentathlon-w-calculator.module.js.map
 
 /***/ }),
 
-/***/ 273:
+/***/ 283:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DecathlonCalculatorPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PentathlonWCalculatorPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_calculators_mens__ = __webpack_require__(274);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_calculators_womens__ = __webpack_require__(273);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -59,51 +59,39 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 /**
- * Generated class for the DecathlonCalculatorPage page.
+ * Generated class for the PentathlonWCalculatorPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var DecathlonCalculatorPage = /** @class */ (function () {
-    function DecathlonCalculatorPage(navCtrl, navParams, calculator) {
+var PentathlonWCalculatorPage = /** @class */ (function () {
+    function PentathlonWCalculatorPage(navCtrl, navParams, calculator) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.calculator = calculator;
         this.inputs = {
-            hundred: "0.00",
+            sixtyHurdles: "0.00",
             lj: "0.00",
             sp: "0.00",
             hj: "0.00",
-            four: "0.00",
-            hurdles: "0.00",
-            dt: "0.00",
-            pv: "0.00",
-            jt: "0.00",
-            fifteen: "0:00"
+            eight: "0:00"
         };
         this.outputs = {
-            hundred: 0,
+            sixtyHurdles: 0,
             lj: 0,
             sp: 0,
             hj: 0,
-            four: 0,
-            hurdles: 0,
-            dt: 0,
-            pv: 0,
-            jt: 0,
-            fifteen: 0,
-            dayOne: 0,
-            dayTwo: 0,
+            eight: 0,
             total: 0
         };
     }
-    DecathlonCalculatorPage.prototype.cancel = function () {
+    PentathlonWCalculatorPage.prototype.cancel = function () {
         this.navCtrl.pop();
     };
-    DecathlonCalculatorPage.prototype.save = function () {
+    PentathlonWCalculatorPage.prototype.save = function () {
     };
-    DecathlonCalculatorPage.prototype.updateTextFocus = function (value) {
-        if (value == "fifteen") {
+    PentathlonWCalculatorPage.prototype.updateTextFocus = function (value) {
+        if (value == "eight") {
             if (this.inputs[value] == "0:00") {
                 this.inputs[value] = "";
             }
@@ -112,8 +100,8 @@ var DecathlonCalculatorPage = /** @class */ (function () {
             this.inputs[value] = "";
         }
     };
-    DecathlonCalculatorPage.prototype.updateTextBlur = function (value) {
-        if (value == "fifteen") {
+    PentathlonWCalculatorPage.prototype.updateTextBlur = function (value) {
+        if (value == "eight") {
             if (this.inputs[value] == "") {
                 this.inputs[value] = "0:00";
             }
@@ -122,7 +110,7 @@ var DecathlonCalculatorPage = /** @class */ (function () {
             this.inputs[value] = "0.00";
         }
     };
-    DecathlonCalculatorPage.prototype.isNumber = function (event) {
+    PentathlonWCalculatorPage.prototype.isNumber = function (event) {
         var key = window.event ? event.keyCode : event.which;
         if (key == 46 || event.keyCode == 8 || event.keyCode == 46 || event.keyCode == 37 || event.keyCode == 39) {
             return true;
@@ -131,7 +119,7 @@ var DecathlonCalculatorPage = /** @class */ (function () {
             return !(key < 48 || key > 57);
     };
     ;
-    DecathlonCalculatorPage.prototype.isTime = function (event) {
+    PentathlonWCalculatorPage.prototype.isTime = function (event) {
         var key = window.event ? event.keyCode : event.which;
         if (key == 46 || key == 58 || event.keyCode == 8 || event.keyCode == 46 || event.keyCode == 37 || event.keyCode == 39) {
             return true;
@@ -140,10 +128,10 @@ var DecathlonCalculatorPage = /** @class */ (function () {
             return !(key < 48 || key > 57);
     };
     ;
-    DecathlonCalculatorPage.prototype.updateScore = function () {
+    PentathlonWCalculatorPage.prototype.updateScore = function () {
         for (var key in this.inputs) {
             if (this.inputs.hasOwnProperty(key)) {
-                if (key != "fifteen") {
+                if (key != "eight") {
                     var parse = Number(this.inputs[key]);
                     if (isNaN(parse)) {
                         parse = 0.00;
@@ -172,31 +160,22 @@ var DecathlonCalculatorPage = /** @class */ (function () {
                         this.outputs[key] = 0;
                     }
                 }
-                var dayOne = this.calculator.getDayOne(this.outputs);
-                if (!isNaN(dayOne)) {
-                    this.outputs.dayOne = dayOne;
-                }
-                var dayTwo = this.calculator.getDayTwo(this.outputs);
-                if (!isNaN(dayOne)) {
-                    this.outputs.dayTwo = dayTwo;
-                }
                 var total = this.calculator.getTotal(this.outputs);
-                if (!isNaN(dayOne)) {
-                    this.outputs.total = total;
-                }
+                this.outputs.total = total;
             }
         }
     };
-    DecathlonCalculatorPage = __decorate([
+    PentathlonWCalculatorPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-decathlon-calculator',template:/*ion-inline-start:"/Users/jonahelbaz/Desktop/Score Calculator/ScoreCalculator/src/pages/calculators/decathlon-calculator/decathlon-calculator.html"*/'<!--\n  Generated template for the DecathlonCalculatorPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-buttons left (click)="cancel()">\n      <button ion-button="arrow-back" color="primary">\n        <ion-icon name="ios-arrow-down"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>Decathlon</ion-title>\n    <ion-buttons right (click)="save()">\n      <button ion-button="arrow-back" color="primary">\n        Save\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n  <ion-list>\n    <ion-row>\n      <ion-col>\n        <ion-label>100m</ion-label>\n      </ion-col>\n      <ion-col>\n        <ion-input maxlength="5" [(ngModel)]="inputs.hundred" (ionFocus)="updateTextFocus(\'hundred\')" (ionBlur)="updateTextBlur(\'hundred\')" (ionChange)="updateScore()"  (keypress)="isNumber($event)"></ion-input>\n      </ion-col>\n      <ion-col>\n        <ion-input [readonly]="true" class="output" [(ngModel)]="outputs.hundred" (ionFocus)="false"></ion-input>\n      </ion-col>\n    </ion-row>\n    <ion-row class="row">\n      <ion-col>\n        <ion-label>Long Jump</ion-label>\n      </ion-col>\n      <ion-col>\n        <ion-input maxlength="5" [(ngModel)]="inputs.lj" (ionFocus)="updateTextFocus(\'lj\')" (ionBlur)="updateTextBlur(\'lj\')" (ionChange)="updateScore()"  (keypress)="isNumber($event)"></ion-input>\n      </ion-col>\n      <ion-col>\n        <ion-input [readonly]="true" l class="output" [(ngModel)]="outputs.lj"></ion-input>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col>\n        <ion-label>Shot Put</ion-label>\n      </ion-col>\n      <ion-col>\n        <ion-input maxlength="5" [(ngModel)]="inputs.sp" (ionFocus)="updateTextFocus(\'sp\')" (ionBlur)="updateTextBlur(\'sp\')" (ionChange)="updateScore()"  (keypress)="isNumber($event)"></ion-input>\n      </ion-col>\n      <ion-col>\n        <ion-input [readonly]="true" class="output" [(ngModel)]="outputs.sp"></ion-input>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col>\n        <ion-label>High Jump</ion-label>\n      </ion-col>\n      <ion-col>\n        <ion-input maxlength="5" [(ngModel)]="inputs.hj" (ionFocus)="updateTextFocus(\'hj\')" (ionBlur)="updateTextBlur(\'hj\')" (ionChange)="updateScore()"  (keypress)="isNumber($event)"></ion-input>\n      </ion-col>\n      <ion-col>\n        <ion-input [readonly]="true" class="output" [(ngModel)]="outputs.hj"></ion-input>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col>\n        <ion-label>400m</ion-label>\n      </ion-col>\n      <ion-col>\n        <ion-input maxlength="5" [(ngModel)]="inputs.four" (ionFocus)="updateTextFocus(\'four\')" (ionBlur)="updateTextBlur(\'four\')" (ionChange)="updateScore()"  (keypress)="isNumber($event)"></ion-input>\n      </ion-col>\n      <ion-col>\n        <ion-input [readonly]="true" class="output" [(ngModel)]="outputs.four"></ion-input>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col>\n        <ion-label>110mH</ion-label>\n      </ion-col>\n      <ion-col>\n        <ion-input maxlength="5" [(ngModel)]="inputs.hurdles" (ionFocus)="updateTextFocus(\'hurdles\')" (ionBlur)="updateTextBlur(\'hurdles\')" (ionChange)="updateScore()"  (keypress)="isNumber($event)"></ion-input>\n      </ion-col>\n      <ion-col>\n        <ion-input [readonly]="true" class="output" [(ngModel)]="outputs.hurdles"></ion-input>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col>\n        <ion-label>Discus Throw</ion-label>\n      </ion-col>\n      <ion-col>\n        <ion-input maxlength="5" [(ngModel)]="inputs.dt" (ionFocus)="updateTextFocus(\'dt\')" (ionBlur)="updateTextBlur(\'dt\')" (ionChange)="updateScore()"  (keypress)="isNumber($event)"></ion-input>\n      </ion-col>\n      <ion-col>\n        <ion-input [readonly]="true" class="output" [(ngModel)]="outputs.dt"></ion-input>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col>\n        <ion-label>Pole Vault</ion-label>\n      </ion-col>\n      <ion-col>\n        <ion-input maxlength="5" [(ngModel)]="inputs.pv" (ionFocus)="updateTextFocus(\'pv\')" (ionBlur)="updateTextBlur(\'pv\')" (ionChange)="updateScore()"  (keypress)="isNumber($event)"></ion-input>\n      </ion-col>\n      <ion-col>\n        <ion-input [readonly]="true" class="output" [(ngModel)]="outputs.pv"></ion-input>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col>\n        <ion-label>Javelin Throw</ion-label>\n      </ion-col>\n      <ion-col>\n        <ion-input maxlength="5" [(ngModel)]="inputs.jt" (ionFocus)="updateTextFocus(\'jt\')" (ionBlur)="updateTextBlur(\'jt\')" (ionChange)="updateScore()"  (keypress)="isNumber($event)"></ion-input>\n      </ion-col>\n      <ion-col>\n        <ion-input [readonly]="true" class="output" [(ngModel)]="outputs.jt"></ion-input>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col>\n        <ion-label>1500m</ion-label>\n      </ion-col>\n      <ion-col>\n        <ion-input maxlength="8" [(ngModel)]="inputs.fifteen" (ionFocus)="updateTextFocus(\'fifteen\')" (ionBlur)="updateTextBlur(\'fifteen\')" (ionChange)="updateScore()"  (keypress)="isTime($event)"></ion-input>\n      </ion-col>\n      <ion-col>\n        <ion-input [readonly]="true" class="output" [(ngModel)]="outputs.fifteen"></ion-input>\n      </ion-col>\n    </ion-row>\n    <ion-row class="outputResult">\n      <ion-col col-4></ion-col>\n      <ion-col col-5>\n        <ion-label>Score Day 1:</ion-label>\n      </ion-col>\n      <ion-col col-2>\n        <ion-input [readonly]="true" class="output" [(ngModel)]="outputs.dayOne"></ion-input>\n      </ion-col>\n    </ion-row>\n    <ion-row class="outputResult">\n      <ion-col col-4></ion-col>\n      <ion-col col-5>\n        <ion-label>Score Day 2:</ion-label>\n      </ion-col>\n      <ion-col col-2>\n        <ion-input [readonly]="true" class="output" [(ngModel)]="outputs.dayTwo"></ion-input>\n      </ion-col>\n    </ion-row>\n    <ion-row class="outputResult">\n      <ion-col col-4></ion-col>\n      <ion-col col-5>\n        <ion-label>Total Score:</ion-label>\n      </ion-col>\n      <ion-col col-2>\n        <ion-input [readonly]="true" class="output" [(ngModel)]="outputs.total"></ion-input>\n      </ion-col>\n    </ion-row>\n  </ion-list>\n</ion-content>\n\n'/*ion-inline-end:"/Users/jonahelbaz/Desktop/Score Calculator/ScoreCalculator/src/pages/calculators/decathlon-calculator/decathlon-calculator.html"*/,
+            selector: 'page-pentathlon-w-calculator',template:/*ion-inline-start:"/Users/jonahelbaz/Desktop/ScoreCalculator/src/pages/calculators/pentathlon-w-calculator/pentathlon-w-calculator.html"*/'<!--\n  Generated template for the DecathlonCalculatorPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-buttons left (click)="cancel()">\n      <button ion-button="arrow-back" color="primary">\n        <ion-icon name="ios-arrow-down"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>Heptathlon</ion-title>\n    <ion-buttons right (click)="save()">\n      <button ion-button="arrow-back" color="primary">\n        Save\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n  <ion-list>\n    <ion-row>\n      <ion-col>\n        <ion-label>60mH</ion-label>\n      </ion-col>\n      <ion-col>\n        <ion-input maxlength="5" [(ngModel)]="inputs.sixtyHurdles" (ionFocus)="updateTextFocus(\'sixtyHurdles\')" (ionBlur)="updateTextBlur(\'sixtyHurdles\')" (ionChange)="updateScore()"  (keypress)="isNumber($event)"></ion-input>\n      </ion-col>\n      <ion-col>\n        <ion-input [readonly]="true" class="output" [(ngModel)]="outputs.sixtyHurdles" (ionFocus)="false"></ion-input>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col>\n        <ion-label>High Jump</ion-label>\n      </ion-col>\n      <ion-col>\n        <ion-input maxlength="5" [(ngModel)]="inputs.hj" (ionFocus)="updateTextFocus(\'hj\')" (ionBlur)="updateTextBlur(\'hj\')" (ionChange)="updateScore()"  (keypress)="isNumber($event)"></ion-input>\n      </ion-col>\n      <ion-col>\n        <ion-input [readonly]="true" class="output" [(ngModel)]="outputs.hj"></ion-input>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col>\n        <ion-label>Shot Put</ion-label>\n      </ion-col>\n      <ion-col>\n        <ion-input maxlength="5" [(ngModel)]="inputs.sp" (ionFocus)="updateTextFocus(\'sp\')" (ionBlur)="updateTextBlur(\'sp\')" (ionChange)="updateScore()"  (keypress)="isNumber($event)"></ion-input>\n      </ion-col>\n      <ion-col>\n        <ion-input [readonly]="true" class="output" [(ngModel)]="outputs.sp"></ion-input>\n      </ion-col>\n    </ion-row>\n    <ion-row class="row">\n      <ion-col>\n        <ion-label>Long Jump</ion-label>\n      </ion-col>\n      <ion-col>\n        <ion-input maxlength="5" [(ngModel)]="inputs.lj" (ionFocus)="updateTextFocus(\'lj\')" (ionBlur)="updateTextBlur(\'lj\')" (ionChange)="updateScore()"  (keypress)="isNumber($event)"></ion-input>\n      </ion-col>\n      <ion-col>\n        <ion-input [readonly]="true" l class="output" [(ngModel)]="outputs.lj"></ion-input>\n      </ion-col>\n    </ion-row>\n    <ion-row>\n      <ion-col>\n        <ion-label>800m</ion-label>\n      </ion-col>\n      <ion-col>\n        <ion-input maxlength="8" [(ngModel)]="inputs.eight" (ionFocus)="updateTextFocus(\'eight\')" (ionBlur)="updateTextBlur(\'eight\')" (ionChange)="updateScore()"  (keypress)="isTime($event)"></ion-input>\n      </ion-col>\n      <ion-col>\n        <ion-input [readonly]="true" class="output" [(ngModel)]="outputs.eight"></ion-input>\n      </ion-col>\n    </ion-row>\n    <ion-row class="outputResult">\n      <ion-col col-4></ion-col>\n      <ion-col col-5>\n        <ion-label>Total Score:</ion-label>\n      </ion-col>\n      <ion-col col-2>\n        <ion-input [readonly]="true" class="output" [(ngModel)]="outputs.total"></ion-input>\n      </ion-col>\n    </ion-row>\n  </ion-list>\n</ion-content>\n\n'/*ion-inline-end:"/Users/jonahelbaz/Desktop/ScoreCalculator/src/pages/calculators/pentathlon-w-calculator/pentathlon-w-calculator.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_calculators_mens__["a" /* MenPointsProvider */]])
-    ], DecathlonCalculatorPage);
-    return DecathlonCalculatorPage;
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__providers_calculators_womens__["a" /* WomenPointsProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__providers_calculators_womens__["a" /* WomenPointsProvider */]) === "function" && _c || Object])
+    ], PentathlonWCalculatorPage);
+    return PentathlonWCalculatorPage;
+    var _a, _b, _c;
 }());
 
-//# sourceMappingURL=decathlon-calculator.js.map
+//# sourceMappingURL=pentathlon-w-calculator.js.map
 
 /***/ })
 

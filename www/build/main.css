@@ -25700,6 +25700,50 @@ page-decathlon-calculator .outputResult {
   height: 30px;
 }
 
+page-heptathlon-m-calculator ion-row {
+  padding-bottom: 2px;
+  border-bottom: 1px solid white;
+}
+
+page-heptathlon-m-calculator .output {
+  text-align: center;
+}
+
+page-heptathlon-m-calculator ion-input {
+  margin-left: 40px;
+}
+
+page-heptathlon-m-calculator ion-col {
+  height: 40px;
+}
+
+page-heptathlon-m-calculator .outputResult {
+  border: none !important;
+  height: 30px;
+}
+
+page-pentathlon-m-calculator ion-row {
+  padding-bottom: 2px;
+  border-bottom: 1px solid white;
+}
+
+page-pentathlon-m-calculator .output {
+  text-align: center;
+}
+
+page-pentathlon-m-calculator ion-input {
+  margin-left: 40px;
+}
+
+page-pentathlon-m-calculator ion-col {
+  height: 40px;
+}
+
+page-pentathlon-m-calculator .outputResult {
+  border: none !important;
+  height: 30px;
+}
+
 page-home .listItem:hover {
   cursor: pointer;
   background-color: #488aff;
