@@ -3,6 +3,9 @@ import {ModalController, NavController} from 'ionic-angular';
 import {HeptathlonMCalculatorPage} from "../calculators/heptathlon-m-calculator/heptathlon-m-calculator";
 import {PentathlonMCalculatorPage} from "../calculators/pentathlon-m-calculator/pentathlon-m-calculator";
 import {HeptathlonWCalculatorPage} from "../calculators/heptathlon-w-calculator/heptathlon-w-calculator";
+import {UnitConverterPage} from "../calculators/unit-converter/unit-converter";
+import {StartingGunPage} from "../utilities/starting-gun/starting-gun";
+import {StopwatchPage} from "../utilities/stopwatch/stopwatch";
 
 @Component({
   selector: 'page-home',
@@ -31,6 +34,19 @@ export class HomePage {
       case 'pentathlonW':
             this.modalCtrl.create('PentathlonWCalculatorPage').present();
             break;
+      case 'units':
+            this.modalCtrl.create('UnitConverterPage').present();
+            break;
+      case 'gun':
+            this.modalCtrl.create('StartingGunPage').present();
+            break;
+      case 'stopwatch':
+            this.modalCtrl.create('StopwatchPage').present();
+            break;
+        case 'mercier':
+            this.modalCtrl.create('MercierPage').present();
+            break;
+
     }
   }
 

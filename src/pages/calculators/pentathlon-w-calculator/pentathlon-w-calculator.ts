@@ -89,7 +89,7 @@ export class PentathlonWCalculatorPage {
             return true;
         }
         else return !( key < 48 || key > 57);
-    };
+    }
 
     isTime(event) {
         let key = window.event ? event.keyCode : event.which;

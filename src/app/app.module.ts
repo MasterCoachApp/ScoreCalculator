@@ -12,6 +12,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import {MenPointsProvider} from "../providers/calculators/mens";
 import {WomenPointsProvider} from "../providers/calculators/womens";
+import {MercierPointsProvider} from "../providers/calculators/mercier";
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import {WomenPointsProvider} from "../providers/calculators/womens";
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     MenPointsProvider,
-    WomenPointsProvider
+    WomenPointsProvider,
+    MercierPointsProvider
   ]
 })
 export class AppModule {}

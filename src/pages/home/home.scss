@@ -8,5 +8,9 @@ page-home {
     background-color: color($colors, primary);//darken(color($colors, background), 5%);
   }
 
+  ion-note {
+    padding-left: 5px;
+  }
+
 
 }
