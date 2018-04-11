@@ -1,7 +1,7 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
-import { MyApp } from './app.component';
+import { TrackUtilitiesApp } from './app.component';
 
 import { HomePage } from '../pages/home/home';
 
@@ -13,16 +13,16 @@ import {MercierPointsProvider} from "../providers/calculators/mercier";
 
 @NgModule({
   declarations: [
-    MyApp,
+      TrackUtilitiesApp,
     HomePage,
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(TrackUtilitiesApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,
+      TrackUtilitiesApp,
     HomePage,
   ],
   providers: [
@@ -34,4 +34,4 @@ import {MercierPointsProvider} from "../providers/calculators/mercier";
     MercierPointsProvider
   ]
 })
-export class AppModule {}
+export class TrackUtilitiesModule {}

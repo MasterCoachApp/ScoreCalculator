@@ -6,9 +6,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 
 @Component({
+    selector: 'track-utilities',
   templateUrl: 'app.html'
 })
-export class MyApp {
+export class TrackUtilitiesApp {
   rootPage:any = HomePage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
