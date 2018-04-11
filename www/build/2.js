@@ -1,6 +1,6 @@
 webpackJsonp([2],{
 
-/***/ 281:
+/***/ 280:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UnitConverterPageModule", function() { return UnitConverterPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__unit_converter__ = __webpack_require__(290);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__unit_converter__ = __webpack_require__(289);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,7 +38,7 @@ var UnitConverterPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 290:
+/***/ 289:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -137,7 +137,7 @@ var UnitConverterPage = /** @class */ (function () {
     };
     UnitConverterPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-unit-converter',template:/*ion-inline-start:"/Users/jonahelbaz/Desktop/ScoreCalculator/src/pages/calculators/unit-converter/unit-converter.html"*/'<!--\n  Generated template for the UnitConverterPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-buttons left (click)="cancel()">\n      <button ion-button="arrow-back" color="primary">\n        <ion-icon name="ios-arrow-down"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>Unit Converter</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n  <ion-grid>\n  <ion-row>\n    <ion-col col-4>\n      <ion-label>Feet</ion-label>\n    </ion-col>\n    <ion-col col-4>\n      <ion-label>Inches</ion-label>\n    </ion-col>\n  </ion-row>\n  <ion-row>\n    <ion-col col-4>\n      <ion-input [(ngModel)]="measurements.feet" (keypress)="isNumber($event)" (ionChange)="updateScoreImperial()" (ionFocus)="updateTextFocus(\'feet\')" (ionBlur)="updateTextBlur(\'feet\')"></ion-input>\n    </ion-col>\n    <ion-col col-4>\n      <ion-input [(ngModel)]="measurements.inches" (keypress)="isNumber($event)" (ionChange)="updateScoreImperial()" (ionFocus)="updateTextFocus(\'inches\')" (ionBlur)="updateTextBlur(\'inches\')"></ion-input>\n    </ion-col>\n    <ion-col col-4>\n      <ion-input [(ngModel)]="outputs.metric" class="output" [readonly]="true" (keypress)="isNumber($event)" (ionFocus)="updateTextFocus(\'inches\')" (ionBlur)="updateTextBlur(\'inches\')"></ion-input>\n    </ion-col>\n  </ion-row>\n  </ion-grid>\n  <ion-grid>\n  <ion-row>\n    <ion-col>\n      <ion-label>Meters</ion-label>\n    </ion-col>\n  </ion-row>\n  <ion-row>\n    <ion-col col-8>\n      <ion-input [(ngModel)]="measurements.meters" (ionChange)="updateScoreMetric()" (keypress)="isNumber($event)" (ionFocus)="updateTextFocus(\'meters\')" (ionBlur)="updateTextBlur(\'meters\')"></ion-input>\n    </ion-col>\n    <ion-col>\n      <ion-input [(ngModel)]="outputs.imperial" class="output" [readonly]="true" (keypress)="isNumber($event)" (ionFocus)="updateTextFocus(\'inches\')" (ionBlur)="updateTextBlur(\'inches\')"></ion-input>\n    </ion-col>\n  </ion-row>\n  </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/Users/jonahelbaz/Desktop/ScoreCalculator/src/pages/calculators/unit-converter/unit-converter.html"*/,
+            selector: 'page-unit-converter',template:/*ion-inline-start:"/Users/jonahelbaz/Desktop/ScoreCalculator-Fork/src/pages/calculators/unit-converter/unit-converter.html"*/'<!--\n  Generated template for the UnitConverterPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-buttons left (click)="cancel()">\n      <button ion-button="arrow-back" color="primary">\n        <ion-icon name="ios-arrow-down"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>Unit Converter</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n  <ion-grid>\n  <ion-row>\n    <ion-col col-4>\n      <ion-label>Feet</ion-label>\n    </ion-col>\n    <ion-col col-4>\n      <ion-label>Inches</ion-label>\n    </ion-col>\n  </ion-row>\n  <ion-row>\n    <ion-col col-4>\n      <ion-input [(ngModel)]="measurements.feet" (keypress)="isNumber($event)" (ionChange)="updateScoreImperial()" (ionFocus)="updateTextFocus(\'feet\')" (ionBlur)="updateTextBlur(\'feet\')"></ion-input>\n    </ion-col>\n    <ion-col col-4>\n      <ion-input [(ngModel)]="measurements.inches" (keypress)="isNumber($event)" (ionChange)="updateScoreImperial()" (ionFocus)="updateTextFocus(\'inches\')" (ionBlur)="updateTextBlur(\'inches\')"></ion-input>\n    </ion-col>\n    <ion-col col-4>\n      <ion-input [(ngModel)]="outputs.metric" class="output" [readonly]="true" (keypress)="isNumber($event)" (ionFocus)="updateTextFocus(\'inches\')" (ionBlur)="updateTextBlur(\'inches\')"></ion-input>\n    </ion-col>\n  </ion-row>\n  </ion-grid>\n  <ion-grid>\n  <ion-row>\n    <ion-col>\n      <ion-label>Meters</ion-label>\n    </ion-col>\n  </ion-row>\n  <ion-row>\n    <ion-col col-8>\n      <ion-input [(ngModel)]="measurements.meters" (ionChange)="updateScoreMetric()" (keypress)="isNumber($event)" (ionFocus)="updateTextFocus(\'meters\')" (ionBlur)="updateTextBlur(\'meters\')"></ion-input>\n    </ion-col>\n    <ion-col>\n      <ion-input [(ngModel)]="outputs.imperial" class="output" [readonly]="true" (keypress)="isNumber($event)" (ionFocus)="updateTextFocus(\'inches\')" (ionBlur)="updateTextBlur(\'inches\')"></ion-input>\n    </ion-col>\n  </ion-row>\n  </ion-grid>\n</ion-content>\n'/*ion-inline-end:"/Users/jonahelbaz/Desktop/ScoreCalculator-Fork/src/pages/calculators/unit-converter/unit-converter.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], UnitConverterPage);
