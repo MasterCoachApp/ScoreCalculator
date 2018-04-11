@@ -22,39 +22,39 @@ webpackEmptyAsyncContext.id = 108;
 
 var map = {
 	"../pages/calculators/decathlon-calculator/decathlon-calculator.module": [
-		274,
+		272,
 		8
 	],
 	"../pages/calculators/heptathlon-m-calculator/heptathlon-m-calculator.module": [
-		275,
+		273,
 		7
 	],
 	"../pages/calculators/heptathlon-w-calculator/heptathlon-w-calculator.module": [
-		276,
+		274,
 		6
 	],
 	"../pages/calculators/mercier/mercier.module": [
-		277,
+		275,
 		5
 	],
 	"../pages/calculators/pentathlon-m-calculator/pentathlon-m-calculator.module": [
-		278,
+		276,
 		4
 	],
 	"../pages/calculators/pentathlon-w-calculator/pentathlon-w-calculator.module": [
-		279,
+		277,
 		3
 	],
 	"../pages/calculators/unit-converter/unit-converter.module": [
-		280,
+		278,
 		2
 	],
 	"../pages/utilities/starting-gun/starting-gun.module": [
-		281,
+		279,
 		1
 	],
 	"../pages/utilities/stopwatch/stopwatch.module": [
-		282,
+		280,
 		0
 	]
 };
@@ -80,7 +80,7 @@ module.exports = webpackAsyncContext;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(49);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -130,11 +130,12 @@ var HomePage = /** @class */ (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/Users/jonahelbaz/Desktop/ScoreCalculator-Fork/src/pages/home/home.html"*/'<!--\n  Generated template for the ToolsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<!--<ion-header>-->\n\n  <!--<ion-navbar>-->\n    <!--<ion-title start>Tools</ion-title>-->\n    <!--<ion-buttons end>-->\n      <!--<button ion-button end>-->\n        <!--<ion-icon style="font-size: 30px; margin-right: 15px;" color="primary" name="ios-archive-outline"></ion-icon>-->\n      <!--</button>-->\n    <!--</ion-buttons>-->\n  <!--</ion-navbar>-->\n\n<!--</ion-header>-->\n\n\n<ion-content>\n  <ion-list-header>Utilities</ion-list-header>\n\n  <ion-list>\n    <ion-note>TOOLS</ion-note>\n    <ion-item class="listItem" tappable (click)="displayCalculator(\'stopwatch\')">\n      <ion-label>Stopwatch</ion-label>\n    </ion-item>\n    <ion-item class="listItem" tappable (click)="displayCalculator(\'gun\')">\n      <ion-label>Starting Gun</ion-label>\n    </ion-item>\n  </ion-list>\n\n  <ion-list>\n    <ion-note>MERCIER</ion-note>\n    <ion-item class="listItem" tappable (click)="displayCalculator(\'mercier\')">\n      <ion-label>Outdoor / Indoor</ion-label>\n    </ion-item>\n  </ion-list>\n\n  <ion-list>\n    <ion-note>MEN</ion-note>\n    <ion-item tappable (click)="displayCalculator(\'decathlon\')" class="listItem">\n      <ion-label>Decathlon</ion-label>\n    </ion-item>\n    <ion-item tappable (click)="displayCalculator(\'heptathlonM\')" class="listItem">\n      <ion-label>Heptathlon</ion-label>\n    </ion-item>\n    <ion-item tappable (click)="displayCalculator(\'pentathlonM\')" class="listItem">\n      <ion-label>Pentathlon</ion-label>\n    </ion-item>\n  </ion-list>\n\n  <ion-list>\n    <ion-note>WOMEN</ion-note>\n    <ion-item  tappable (click)="displayCalculator(\'heptathlonW\')" class="listItem">\n      <ion-label>Heptathlon</ion-label>\n    </ion-item>\n    <ion-item  tappable (click)="displayCalculator(\'pentathlonW\')" class="listItem">\n      <ion-label>Pentathlon</ion-label>\n    </ion-item>\n  </ion-list>\n\n  <ion-list>\n    <ion-note>UNIT CONVERTER</ion-note>\n    <ion-item tappable (click)="displayCalculator(\'units\')" class="listItem">\n      Converter\n    </ion-item>\n  </ion-list>\n\n</ion-content>\n'/*ion-inline-end:"/Users/jonahelbaz/Desktop/ScoreCalculator-Fork/src/pages/home/home.html"*/
+            selector: 'calculator-home',template:/*ion-inline-start:"/Users/jonahelbaz/Desktop/ScoreCalculator-Fork/src/pages/home/home.html"*/'<!--\n  Generated template for the ToolsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<!--<ion-header>-->\n\n  <!--<ion-navbar>-->\n    <!--<ion-title start>Tools</ion-title>-->\n    <!--<ion-buttons end>-->\n      <!--<button ion-button end>-->\n        <!--<ion-icon style="font-size: 30px; margin-right: 15px;" color="primary" name="ios-archive-outline"></ion-icon>-->\n      <!--</button>-->\n    <!--</ion-buttons>-->\n  <!--</ion-navbar>-->\n\n<!--</ion-header>-->\n\n\n<ion-content>\n  <ion-list-header>Utilities</ion-list-header>\n\n  <ion-list>\n    <ion-note>TOOLS</ion-note>\n    <ion-item class="listItem" tappable (click)="displayCalculator(\'stopwatch\')">\n      <ion-label>Stopwatch</ion-label>\n    </ion-item>\n    <ion-item class="listItem" tappable (click)="displayCalculator(\'gun\')">\n      <ion-label>Starting Gun</ion-label>\n    </ion-item>\n  </ion-list>\n\n  <ion-list>\n    <ion-note>MERCIER</ion-note>\n    <ion-item class="listItem" tappable (click)="displayCalculator(\'mercier\')">\n      <ion-label>Outdoor / Indoor</ion-label>\n    </ion-item>\n  </ion-list>\n\n  <ion-list>\n    <ion-note>MEN</ion-note>\n    <ion-item tappable (click)="displayCalculator(\'decathlon\')" class="listItem">\n      <ion-label>Decathlon</ion-label>\n    </ion-item>\n    <ion-item tappable (click)="displayCalculator(\'heptathlonM\')" class="listItem">\n      <ion-label>Heptathlon</ion-label>\n    </ion-item>\n    <ion-item tappable (click)="displayCalculator(\'pentathlonM\')" class="listItem">\n      <ion-label>Pentathlon</ion-label>\n    </ion-item>\n  </ion-list>\n\n  <ion-list>\n    <ion-note>WOMEN</ion-note>\n    <ion-item  tappable (click)="displayCalculator(\'heptathlonW\')" class="listItem">\n      <ion-label>Heptathlon</ion-label>\n    </ion-item>\n    <ion-item  tappable (click)="displayCalculator(\'pentathlonW\')" class="listItem">\n      <ion-label>Pentathlon</ion-label>\n    </ion-item>\n  </ion-list>\n\n  <ion-list>\n    <ion-note>UNIT CONVERTER</ion-note>\n    <ion-item tappable (click)="displayCalculator(\'units\')" class="listItem">\n      Converter\n    </ion-item>\n  </ion-list>\n\n</ion-content>\n'/*ion-inline-end:"/Users/jonahelbaz/Desktop/ScoreCalculator-Fork/src/pages/home/home.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* ModalController */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* ModalController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* ModalController */]) === "function" && _b || Object])
     ], HomePage);
     return HomePage;
+    var _a, _b;
 }());
 
 //# sourceMappingURL=home.js.map
@@ -1086,7 +1087,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(263);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(193);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_status_bar__ = __webpack_require__(189);
@@ -1163,7 +1164,7 @@ var AppModule = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(189);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(192);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(193);

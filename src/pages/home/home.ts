@@ -8,7 +8,7 @@ import {StartingGunPage} from "../utilities/starting-gun/starting-gun";
 import {StopwatchPage} from "../utilities/stopwatch/stopwatch";
 
 @Component({
-  selector: 'page-home',
+  selector: 'calculator-home',
   templateUrl: 'home.html'
 })
 export class HomePage {

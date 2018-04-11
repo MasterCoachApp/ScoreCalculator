@@ -25784,11 +25784,11 @@ page-unit-converter ion-grid {
   margin-top: 5px;
 }
 
-page-home .listItem:hover {
+calculator-home .listItem:hover {
   cursor: pointer;
   background-color: #488aff;
 }
 
-page-home ion-note {
+calculator-home ion-note {
   padding-left: 5px;
 }
